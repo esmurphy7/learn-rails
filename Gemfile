@@ -1,5 +1,29 @@
+#Changes due to the tutorial:
+# Added version of ruby,
+# Commented out sdoc gem,
+# Learn-rails section
+
 source 'https://rubygems.org'
 
+# Added version of ruby at the will of the tutorial
+ruby '2.0.0'
+
+# Learn-rails tutorial gems
+gem 'activerecord-tableless'
+gem 'compass-rails', '1.1.2' #changed compass-rails gem from "(~> 2.0.alpha.0) ruby" to "1.1.2"
+gem 'figaro'
+gem 'gibbon'
+gem 'google_drive'
+gem 'high_voltage'
+gem 'simple_form'
+gem 'zurb-foundation'
+group :development do # note: groups ensure that certain gems are not loaded into production
+  gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'rails_layout'
+end
+
+#Rails defaults
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
@@ -27,10 +51,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-group :doc do
+#Commented out the following at the will of the tutorial
+#group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
-end
+ # gem 'sdoc', require: false
+#end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
