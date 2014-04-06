@@ -1,7 +1,7 @@
 #Changes due to the tutorial:
 # Added version of ruby,
 # Commented out sdoc gem,
-# Learn-rails section
+# Added Learn-rails section
 
 source 'https://rubygems.org'
 
