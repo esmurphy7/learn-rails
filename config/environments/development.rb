@@ -27,6 +27,7 @@ LearnRails::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   
+  # Setup connection to gmail server
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
@@ -36,4 +37,6 @@ LearnRails::Application.configure do
     user_name: ENV["GMAIL_USERNAME"],
     password: ENV["GMAIL_PASSWORD"]
  }
+  # Send email in development mode
+  config.action_mailer.perform_deliveries = true
 end

@@ -1,4 +1,9 @@
 LearnRails::Application.routes.draw do
+  #Tutorial code:
+  root to: 'visitors#new' # Redirects any requests to the application root to VisitorsController's 'new' action
+
+  
+  # Default comments:
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
