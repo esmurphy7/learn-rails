@@ -7,8 +7,8 @@ class VisitorsController < ApplicationController
     # every page in '/app' uses 'application.html.erb' default layout unless specified otherwise
     # ie: Can specify one of:
       # render "visitors/new"
-      # render "visitors/new", layout => false
-      # render "visitors/new", layout => "special"
+       # render "visitors/new", :layout => false
+      # render "visitors/new", :layout => "special"
     # Flash messages
       # flash.now[:notice] = 'Welcome!'
       # flash.now[:alert] = 'My birthday is soon.'
