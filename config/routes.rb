@@ -1,5 +1,6 @@
 LearnRails::Application.routes.draw do
   #Tutorial code:
+  resources :contacts, only: [:new, :create] # 'resources' generates all 7 routes, 'only:' generates specific routes
   root to: 'visitors#new' # Redirects any requests to the application root to VisitorsController's 'new' action
 
   
