@@ -5,7 +5,7 @@ class Contact < ActiveRecord::Base
   column :name, :string
   column :email, :string
   column :content, :string
-  
+  # Define validations
   validates_presence_of :name
   validates_presence_of :email
   validates_presence_of :content
