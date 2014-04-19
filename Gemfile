@@ -22,7 +22,11 @@ group :development do # note: groups ensure that certain gems are not loaded int
   gem 'quiet_assets'
   gem 'rails_layout'
 end
-
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'thin'
+end
 #Rails defaults
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
