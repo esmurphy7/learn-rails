@@ -21,8 +21,9 @@ group :development do # note: groups ensure that certain gems are not loaded int
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
+  gem 'sqlite3'
 end
-group :production do
+group :production do # gems for Heroku
   gem 'pg'
   gem 'rails_12factor'
   gem 'thin'
@@ -52,7 +53,8 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Build JSON APIs with ease. Read more: https://github.com/rails/
+
 gem 'jbuilder', '~> 1.2'
 
 #Commented out the following at the will of the tutorial
