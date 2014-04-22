@@ -15,7 +15,7 @@ class Contact < ActiveRecord::Base
   
   # Updates a google drive spreadsheet using Google spreadsheets API from google_drive gem.
   def update_spreadsheet
-    # Environment variables are used from config/application.yml with help from figaro gem.
+    # Environment variables are used from 'config/application.yml' with help from figaro gem.
     connection = GoogleDrive.login(ENV["GMAIL_USERNAME"], ENV["GMAIL_PASSWORD"])
     ss = connection.spreadsheet_by_title("Learn-Rails-Example")
     if ss.nil?

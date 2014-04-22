@@ -1,0 +1,10 @@
+<% content_for :title do %>Link<%end%>
+<h3>Links</h3>
+<div class='form'>
+  <%= simple_form_for @link do |form| %>
+    <%= form.error_notification %>
+    <%= form.input :name, autofocus: true, placeholder: 'first name' %>
+    <%= form.input :url, placeholder: 'URL', as: :text %>
+    <%= form.button :submit, 'Submit', class: 'submit' %>
+  <%end%>
+</div>

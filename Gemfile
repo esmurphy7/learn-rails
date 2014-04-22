@@ -21,7 +21,7 @@ group :development do # note: groups ensure that certain gems are not loaded int
   gem 'better_errors'
   gem 'quiet_assets'
   gem 'rails_layout'
-  gem 'sqlite3'
+  gem 'pg'
 end
 group :production do # gems for Heroku
   gem 'pg'
@@ -31,6 +31,8 @@ end
 #Rails defaults
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+
+
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
